@@ -3,7 +3,7 @@
 regard circulaire: un prof regardant ses stagiaires
 
 role des gestes en communication interpersonnelle:
-ils prologent la communication verbale et la complete, il faut etre une conconrdance entre le verbale et le non verbale
+ils prolongent la communication verbale et la complete, il faut être une concordance entre le verbale et le non verbale
 
 il faut savoir se mettre dans la bonne zone d'espace
 
@@ -122,97 +122,6 @@ carte postale de vacances de sylvie une collègue | sylvie | moi | carte postale
 appel de BNP concernant notre demande d'ouverture de compte | BNP | danone | appel | voix | appel douverture de compte
 
 
-situation|emetteur|recepteur
-
-message
-
-canal
-
-contexte
-
-reception d'une lettre de reclamation de mr.Durand au sujet de sa livraison du 5/9
-
-Mr. Durand
-
-L'entreprise ou le service responsable de la livraison
-
-Lettre de réclamation concernant la livraison du 5/9
-
-Courrier
-
-Réclamation concernant une livraison
-
-envoi de notre documentation au magasin Carrefour
-
-Notre entreprise
-
-Magasin Carrefour
-
-Documentation sur nos produits ou services
-
-Courrier électronique ou courrier postal
-
-Promotion ou information sur nos produits ou services
-
-note de votre chef de service vous demandant s'il vous est possible de raccompagner Mme Leher, une collègue en raison des grèves de personnels RATP
-
-Chef de service
-
-Moi
-
-Demande de raccompagnement de Mme Leher en raison de la grève des transports publics
-
-Communication orale ou écrite
-
-Situation de grève des transports publics
-
-envoi d'un chèque postal en règlement de la facture EDF
-
-Client
-
-Fournisseur d'énergie EDF
-
-Chèque postal de paiement de la facture EDF
-
-Courrier
-
-Paiement d'une facture
-
-commande de 100 boîtes de yaourt liquide à la framboise pour le magasin Prisunie
-
-Magasin Prisunie
-
-Danone (fabricant ou distributeur des yaourts)
-
-Commande de 100 boîtes de yaourt liquide à la framboise
-
-Communication écrite
-
-Commande de produits pour le magasin
-
-carte postale de vacances de Sylvie, une collègue
-
-Sylvie
-
-Moi
-
-Carte postale de vacances
-
-Courrier
-
-Salutation amicale ou partage d'une expérience personnelle
-
-appel de BNP concernant notre demande d'ouverture de compte
-
-Banque BNP
-
-Notre entreprise
-
-Appel téléphonique pour discuter de la demande d'ouverture de compte
-
-Communication orale
-
-Demande d'ouverture de compte bancaire
 
 <table><thead><tr><th>situation</th><th>emetteur</th><th>recepteur</th><th>message</th><th>canal</th><th>contexte</th></tr></thead><tbody><tr><td>reception d'une lettre de reclamation de mr.Durand au sujet de sa livraison du 5/9</td><td>Mr. Durand</td><td>L'entreprise ou le service responsable de la livraison</td><td>Lettre de réclamation concernant la livraison du 5/9</td><td>Courrier</td><td>Réclamation concernant une livraison</td></tr><tr><td>envoi de notre documentation au magasin Carrefour</td><td>Notre entreprise</td><td>Magasin Carrefour</td><td>Documentation sur nos produits ou services</td><td>Courrier électronique ou courrier postal</td><td>Promotion ou information sur nos produits ou services</td></tr><tr><td>note de votre chef de service vous demandant s'il vous est possible de raccompagner Mme Leher, une collègue en raison des grèves de personnels RATP</td><td>Chef de service</td><td>Moi</td><td>Demande de raccompagnement de Mme Leher en raison de la grève des transports publics</td><td>Communication orale ou écrite</td><td>Situation de grève des transports publics</td></tr><tr><td>envoi d'un chèque postal en règlement de la facture EDF</td><td>Client</td><td>Fournisseur d'énergie EDF</td><td>Chèque postal de paiement de la facture EDF</td><td>Courrier</td><td>Paiement d'une facture</td></tr><tr><td>commande de 100 boîtes de yaourt liquide à la framboise pour le magasin Prisunie</td><td>Magasin Prisunie</td><td>Danone (fabricant ou distributeur des yaourts)</td><td>Commande de 100 boîtes de yaourt liquide à la framboise</td><td>Communication écrite</td><td>Commande de produits pour le magasin</td></tr><tr><td>carte postale de vacances de Sylvie, une collègue</td><td>Sylvie</td><td>Moi</td><td>Carte postale de vacances</td><td>Courrier</td><td>Salutation amicale ou partage d'une expérience personnelle</td></tr><tr><td>appel de BNP concernant notre demande d'ouverture de compte</td><td>Banque BNP</td><td>Notre entreprise</td><td>Appel téléphonique pour discuter de la demande d'ouverture de compte</td><td>Communication orale</td><td>Demande d'ouverture de compte bancaire</td></tr></tbody></table>
 

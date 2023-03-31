@@ -1,2 +1,1 @@
 <table><thead><tr><th>Familier</th><th>Courant</th><th>Soutenu</th></tr></thead><tbody><tr><td>bagnole</td><td>automobile</td><td>voiture</td></tr><tr><td>baffe</td><td>gifle</td><td>soufflet</td></tr><tr><td>bouquin</td><td>livre</td><td>ouvrage</td></tr><tr><td>flic</td><td>policier</td><td>gardien de la paix</td></tr><tr><td>onde</td><td>flotte</td><td>eau</td></tr><tr><td>contredanse</td><td>procès-verbal</td><td>contravention</td></tr></tbody></table>
-[]()

@@ -6,4 +6,4 @@
 ![[Pasted image 20230310110613.png]]
 Hypervisor <=> VMM(Virtual Machine Monitor)
 type 1 hypervisor un seul dans meme machine
-type 2 hypervisor on peut installer plusieurs hyperviseur
+type 2 hypervisor(hosted hypervisor) on peut installer plusieurs hyperviseur
