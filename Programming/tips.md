@@ -1,0 +1,1 @@
+- Don't listen to things and take it for granted, criticize and try for yourself, don't judge until you try.

@@ -1,0 +1,7 @@
+- Avoid low end dedicated graphics (integrated is better heat and power efficiency)
+- processor:
+	- Intel 11th gen or greater (H series for heavy workloads)
+	- Ryzen 4000 or more (great performance and efficiency)
+- graphics:
+	- gtx 1650
+	- rtx 3050ti 
