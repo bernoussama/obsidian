@@ -22,6 +22,7 @@
 
 ![[Notes 2023-06-24 20.59.54.excalidraw]]
 
+#### Attaques passives
 
 > Mascarade = Spoofing
 
