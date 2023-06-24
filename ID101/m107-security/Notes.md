@@ -23,6 +23,18 @@
 ![[Notes 2023-06-24 20.59.54.excalidraw]]
 
 #### Attaques passives
+- Lecture du contenu des messages
+- analyse du Traffic
+#### Attaques actives
+- mascarade
+![[Notes 2023-06-24 22.54.57.excalidraw]]
+- rejeu
+![[Notes 2023-06-24 23.12.23.excalidraw]]
+- modification des messages
+![[Notes 2023-06-24 23.21.56.excalidraw]]
+- déni de service
+![[Notes 2023-06-24 23.28.22.excalidraw]]
+
 
 > Mascarade = Spoofing
 
