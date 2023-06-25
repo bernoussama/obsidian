@@ -23,9 +23,12 @@
 
 ![[attaques.excalidraw]]
 
-#### Attaques passives
-- Lecture du contenu des messages
-- analyse du Traffic
+#### Attaques passives:
+- **Lecture du contenu des messages**
+	- message (claire) non crypte 
+- **analyse du Traffic**
+	- message (masque)  crypte
+
 #### Attaques actives
 - mascarade
 ![[Notes 2023-06-24 22.54.57.excalidraw]]
