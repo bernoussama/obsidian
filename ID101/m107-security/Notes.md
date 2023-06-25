@@ -5,6 +5,7 @@
 - ***Intégrité*** : exige que les actifs n’ont pas été modifié, détruit, falsifié, ou perdu d’une manière non autorisée ou accidentelle ; 
 
 - ***Confidentialité*** : exige que les données ne soient pas divulguées aux entités à moins qu'elles n'aient été autorisées à accéder et à connaitre ces données.
+![[Notes 2023-06-25 13.12.49.excalidraw]]
 
 ![[Pasted image 20230615102727.png]]
 
@@ -20,7 +21,7 @@
 
 
 
-![[Notes 2023-06-24 20.59.54.excalidraw]]
+![[attaques.excalidraw]]
 
 #### Attaques passives
 - Lecture du contenu des messages
@@ -35,6 +36,9 @@
 - déni de service
 ![[Notes 2023-06-24 23.28.22.excalidraw]]
 
+#### Attaques internes
+
+#### Attaques externes
 
 > Mascarade = Spoofing
 
