@@ -30,7 +30,7 @@
 	- message (masque)  crypte
 
 #### Attaques actives
-- mascarade
+- mascarade (usurpation d’identité)
 ![[Notes 2023-06-24 22.54.57.excalidraw]]
 - rejeu
 ![[Notes 2023-06-24 23.12.23.excalidraw]]
