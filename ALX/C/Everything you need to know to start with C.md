@@ -61,4 +61,5 @@ Example:
 ```c
 p = &c; //p now holds the address in memory of the variable c
 ```
+
 ![[Drawing 2023-06-15 14.36.17.excalidraw]]
