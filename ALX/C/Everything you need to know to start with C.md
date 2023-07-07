@@ -63,3 +63,15 @@ p = &c; //p now holds the address in memory of the variable c
 ```
 
 ![[Drawing 2023-06-15 14.36.17.excalidraw]]
+
+## Static vs Dynamic library
+
+### Create a static library
+#### create an archive:
+`ar rc libutil.a util_file.o util_net.o util_math.o`
+#### then index it:
+`ranlib libutil.a`
+
+### Using a static library
+`cc main.o -L. -lutil -o prog`
+- this command link the static library `util` with main.o in the prog binary
