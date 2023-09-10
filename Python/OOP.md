@@ -1,3 +1,4 @@
+
 `__dict__` is a dictionary. Another built-in property worth mentioning is `__name__`, which is a string.
 ```python
 class Classy:
@@ -8,6 +9,7 @@ print(Classy.__name__)
 obj = Classy()
 print(type(obj).__name__)
 ```
+
 `__bases__` is a tuple. The tuple contains classes (not class names) which are direct superclasses for the class.
 ```python
 class SuperOne:
@@ -64,7 +66,7 @@ The functions returns True if the object is an instance of the class, or False o
   object_one is object_two      
 ```  
 
-**The `is` operator checks whether two variables (`object_one` and `object_two` here) refer to the same object**.
+**The `is` operator checks whether two variables (`object_one` and `object_two` here) refer(point) to the same object**.
 
 >**Note:** the situation in which **the subclass is able to modify its `superclass` behavior (just like in the example) is called `polymorphism`**.
 
@@ -86,13 +88,11 @@ Don't forget that:
 - multiple inheritance is always risky, as you have many more opportunities to make a mistake in identifying these parts of the superclasses which will effectively influence the new class;
   
 - multiple inheritance may make overriding extremely tricky; moreover, using the `super()` function becomes ambiguous;
-  
-
-  
-  
-
-  
 
 - multiple inheritance violates the **single responsibility principle** (more details here: [https://en.wikipedia.org/wiki/Single_responsibility_principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)) as it makes a new class of two (or more) classes that know nothing about each other;
   
 - we strongly suggest multiple inheritance as the last of all possible solutions - if you really need the many different functionalities offered by different classes, composition may be a better alternative.
+
+# Getters and setters
+> **Best example of getters and setters is datetime**, if you leave the month as unprotected property it can be shadowed by values >12 or <1 wich is problematic, so it should be only accessible through readonly getter and setter that checks for the validity of the passed value
+
