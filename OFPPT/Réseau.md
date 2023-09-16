@@ -51,3 +51,5 @@ ou
 ```
 S1#write
 ```
+
+> **Mode Trunk <=> Mode agregee**
