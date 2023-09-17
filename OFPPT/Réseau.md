@@ -53,3 +53,5 @@ S1#write
 ```
 
 > **Mode Trunk <=> Mode agregee**
+
+`show vtp status`
