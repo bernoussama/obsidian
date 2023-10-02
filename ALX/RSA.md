@@ -16,7 +16,7 @@ p and q are prime not n, but:
 ## Private key
 d as:
 `e.d = 1 mod phi(n)`
-=>`phi(n)%(e.d) = 1`  using extended euclidean algorithm or brute force d for d in range(2,infini)
+=>`(e.d)%phi(n) = 1`  using extended euclidean algorithm or brute force d for d in range(2,phi(n))
 
 ## cipher
 m: message
