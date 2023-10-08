@@ -11,3 +11,7 @@ Write-Host "User's Given Name is: $($user.GivenName)"
 $user | Get-Member
 #This will list all the properties and methods available on the $user object. learn.microsoft.com
 ```
+
+```powershell
+Add-WindowsFeature System-Insights -IncludeManagementTools
+```
