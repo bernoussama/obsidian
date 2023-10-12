@@ -59,10 +59,6 @@ Switch(config-line)# login
 ```
 #### SSH config
 ```
-R1(config)# line vty 0 4
-R1(config)# password ofppt
-R1(config)# login
-
 R1(config)# ip domain-name ofppt.ma
 R1(config)# crypto key generate rsa general-keys modulus 2048
 R1(config)# username admin secret SuperSecretPassword
@@ -98,6 +94,12 @@ Router(config-router)# no auto-summary
 
 - Definition:
 	- protocole de cisco pour la gestion centralise de vlan
+ ```
+ S(config)#vtp domain domain.com
+ S(config)#vtp password password
+ S(config)#vtp mode server/client
+ S(config)#vtp version 2
+```
 
 ## STP
 > port bloque plus grand numero interface
