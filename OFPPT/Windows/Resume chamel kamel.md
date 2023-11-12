@@ -1,3 +1,5 @@
+## Active Directory
+
 Voici les associations entre les termes et les définitions de l'image que vous m'avez envoyée :
 
 | Terme | Définition |
@@ -39,3 +41,22 @@ Dans l'image, la définition de "schéma AD" correspond à la lettre **C**. La d
 Une unité d'organisation est un conteneur qui permet de regrouper des objets dans un domaine. Les unités d'organisation peuvent être utilisées pour organiser les objets par fonction, par département ou par tout autre critère.
 
 Dans l'image, la définition de "unité d'organisation" correspond à la lettre **B**. La définition indique que les unités d'organisation permettent de regrouper des objets dans un domaine.
+
+## DNS
+
+### REQUETES DNS de résolution :
+---
+- ITIRATIVE : permet résolution partielle de l’espace de noms
+- RECURSIVE : permet résolution complète de l’espace de noms
+
+### UNITE D’ORGANISATION
+---
+- Organiser les objets (l’annuaire)
+- Lier les GPO
+- Déléguer le contrôle
+
+
+- **GPO** 
+	- **Etendue** : ensembles d’objets sur lesquels le GPO sera appliques
+	- **L’Etendue peut être filtrée** : filtre de sécurité/ filtre WMI
+	- **Filtre de sécurité** : permet de préciser les comptes sur lesquels le GPO sera appliqué

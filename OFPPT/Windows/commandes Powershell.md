@@ -399,4 +399,15 @@ PS C:\> Add-DhcpServerv4Reservation -ScopeId 172.18.0.0 -ClientId 00-f0-c4- 55 -
 
 PS C:\> Set-DhcpServerv4OptionValue -ReservedIP 172.18.0.60 -Router 172.18.0.
 
+# EFF #todo
 
+42- `New-VM -Name "Server-DHCP" -MemoryStartupBytes 8GB -NewVHDPath "C:\Servers\VMs\Server-DHCP.vhdx" -NewVHDSizeBytes 100GB`
+43- `install-addsdomain -NewDomainName "maroc-network.com" - ParentDomainName "maroc-info.com" -DomainType TreeDomain`
+44- `Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools -restart`
+45- `New-ADOrganizationalUnit -Name "GestionUsers" -Path "DC=maroc-info,DC=com"`
+46- `new-AdGroup -name "GestionAdmin" -Path "ou=GestionUsers,dc=maroc-info,dc=com" -GroupCategory Distribution`
+47- `New-ADUser -SamAccountName "e.employ1" -UserPrincipalName "employ1@Maroc-Network.com" -Name "employ1" -GivenName "employ1" -Surname "User" -Enabled $true -Path "OU=GestionUsers,DC=Maroc-Network,DC=com"`
+48- `Rename-Computer -NewName "Server-DC" -Restart`
+49- `New-NetIPAddress -InterfaceAlias Giga-Ethernet -IPAddress 10.10.1.9 -PrefixLength 24 -DefaultGateway 10.10.1.1` 
+50- `Add-Computer -DomainName "Maroc-network.com"`
+51- `Add-DhcpServerv4Scope -Name "Vlan-Gestion" -StartRange 10.10.1.10 -EndRange 10.10.1.100 -SubnetMask 255.255.255.0 -Description "Vlan-Gestion"`
