@@ -86,9 +86,7 @@ Install-ADDSDomain -NewDomainName khenifra.adatum.com -ParentDomainName
 adatum.com - DomainType ChildDomain -InstallDns
 ```
 
-4. Promouvoir le serveur en Contrôleur de domaine (Ajouter une nouvelle
-
-## arborescence)
+4. Promouvoir le serveur en Contrôleur de domaine (Ajouter une nouvelle arborescence)
 
 ```powershell
 Install-ADDSDomain -NewDomainName contoso.com -ParentDomainName adatum.com -
