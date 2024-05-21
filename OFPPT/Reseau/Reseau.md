@@ -59,6 +59,10 @@ Switch(config-line)# login
 ```
 #### SSH config
 ```
+R1(config)# line vty 0 4
+R1(config)# password ofppt
+R1(config)# login
+
 R1(config)# ip domain-name ofppt.ma
 R1(config)# crypto key generate rsa general-keys modulus 2048
 R1(config)# username admin secret SuperSecretPassword
@@ -71,7 +75,6 @@ R1(config)# login local
 # IF SWITCH
 S1(config)# int vlan 99 # vlan 99 in this case is vlan gestion
 S1(config-if)# ip address 192.168.99.10 # vlan 99 in this case is vlan gestion
-
 ```
 
  ```bash
@@ -79,49 +82,104 @@ ssh -l <username> <ip address(vlan gestion)>
 
 telnet <ip address(vlan gestion)>
 ```
-
-
-
-### Iter-vlan
-
+## RIP
 ```
 Router(config)#router rip
 Router(config-router)# 
 Router(config-router)# no auto-summary
 ```
 
-### VTP
+# MLS
+```
+mls(config)#int fa0/1
+mls(config-if)#switchport trunk encapsulation dot1q
+mls(config-if)#switchport mode trunk
 
-- Definition:
-	- protocole de cisco pour la gestion centralise de vlan
- ```
- S(config)#vtp domain domain.com
- S(config)#vtp password password
- S(config)#vtp mode server/client
- S(config)#vtp version 2
+mls(config)#int vlan 10
+mls(config-if)#no sh
+mls(config-if)#ip address 192.168.10.1 255.255.255.0
+mls(config)#ip routing
 ```
 
-## STP
-> port bloque plus grand numero interface
+# VTP(Vlan Trunking Protocol)
+```
+vtp domain ofppt.ma
+vtp password 123
+vtp mode server/client
+```
+# Etherchannel
+```
+Switch(config-if-range)# switchport mode trunk
+# 
+Switch(config-if-range)#channel-group 1 mode ?
+ 
+ active    Enable LACP unconditionally
 
-- def:
-	- protocole qui permet la redondance au niveau de la couche 2 en éliminant les boucles. 
+ auto      Enable PAgP only if a PAgP device is detected
 
-#### commandes STP
+ desirable Enable PAgP unconditionally
 
+ on        Enable Etherchannel only
 
+ passive   Enable LACP only if a LACP device is detected
 
+Switch(config)# interface Port-channel 1
+Switch(config-if)# switchport mode trunk
+```
 
-## MLS
+# FHRP(First-hop redundancy protocol)
+## HSRP(HotStandbyRouterProto.)
+```
+R1 (config) #interface fa0/0
+R1 (config-if)#standby 1 ip 192.168.1.3
 
+R2 (config) #interface fa0/0
+R2 (config-if) #standby 1 ip 192.168.1.3
 
+R1 (config-if) #standby 1 priority 110
+R1 (config-if) #standby 1 preempt
+```
+## VRRP(Virtual Router Redundancy Protocol)
+```
+R1 (config) #interface fa0/0
+R1 (config-if)#vrrp 1 ip 192.168.1.3
 
->*802.1Q is a standard defined by the Institute of Electrical and Electronics Engineers (IEEE) for virtual LAN (VLAN) tagging in Ethernet networks. It is also commonly referred to as VLAN tagging or simply "dot1q."*
+R2 (config) #interface fa0/0
+R2 (config-if) #vrrp 1 ip 192.168.1.3
 
+R1 (config-if) #vrrp 1 priority 110
+R1 (config-if) #vrrp 1 preempt
+```
+## GLBP(Gateway Load Balancing Protocol)
+```
+R1 (config) #interface fa0/0
+R1 (config-if)#glbp 1 ip 192.168.1.3
 
- -- | Dynamique Automatique | Dynamique souhaitable | Trunk | Accès 
- -- | --------------------- | --------------------- | ----- | ----- 
-**Dynamique Automatique** | Accès | Trunk | Trunc | Accès 
-**Dynamique souhaitable** | Trunc | Trunc | Trunc | Accès 
-**Trunk** | Trunc | Trunc | Trunc | Connectivité limitée 
-**Accès** | Accès | Accès | Connectivité limitée | Accès
+R2 (config) #interface fa0/0
+R2 (config-if) #glbp 1 ip 192.168.1.3
+
+R1 (config-if) #glbp 1 priority 110
+R1 (config-if) #glbp 1 preempt
+Rl (config-if) #glbp 1 load-balancing [round-robin | weighted | host-dependant]
+```
+
+STP
+```
+Switch(config)# spanning-tree vlan 100 priority <priorityvalue>
+- Bach t rado l racine 3etih priority seghira 0 Ola 4096 Ola
+8192 o mate nesach Default Priority hia 32768
+Switch(config)# spanning-tree vlan 100,300 root primary
+Switch(config)# spanning-tree vlan 200 root secondary
+
+Switch(config)# spanning-tree mode pvst
+Switch(config)# spanning-tree mode rapid-pvst
+Switch(config)# Interface Fa0/1
+Switch(config-if)# spanning-tree portfast
+Switch(config-if)#spanning-tree bpduguard enable
+```
+![[Pasted image 20231010040123.png]]
+desactiver DTP
+```
+switchport nonegotiate
+show dtp interface
+```
