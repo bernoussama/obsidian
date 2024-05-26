@@ -6,7 +6,7 @@
 ## Objet Active Directory
 ![[Active directory 2023-12-10 20.04.23.excalidraw]]
 ### DN (Distinguished Name)
-- le DAN permet de designer un objet de manière unique dans la base de données LDAP
+- le DN permet de designer un objet de manière unique dans la base de données LDAP
 - Identifiant d'une entree LDAP
 - il s'agit d'utiliser une série d'attribut permettant de repérer une entree d'une manière unique
 - Paires clés/valeurs
@@ -21,6 +21,13 @@ ou (Organizational Unit) | unite d'organisation
 ![[2023-12-08_16-46-09.png]]
 
 ![[2023-12-08_17-12-44.png]]
+
+| Niveau Foret | Niveau domaine |
+| ---- | ---- |
+| Maître de schéma | Maître RID |
+| Maître d'attribution de nom de domaine | Maître d'infrastructure |
+|  | Maître émulateur PDC |
+
 ![[2023-12-08_17-13-14.png]]
 ![[2023-12-08_17-14-01.png]]
 

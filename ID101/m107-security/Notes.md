@@ -1,6 +1,6 @@
 ## Security objectives
 --- 
-- ***Disponibilité*** : exige qu’une ressource soit disponible et/ou fonctionnelle lorsqu' une entité autorisée la demande ; 
+- ***Disponibilité*** : exige qu’une ressource soit disponible et/ou fonctionnelle lorsqu'une entité autorisée la demande ; 
 
 - ***Intégrité*** : exige que les actifs n’ont pas été modifié, détruit, falsifié, ou perdu d’une manière non autorisée ou accidentelle ; 
 
@@ -17,12 +17,13 @@
 
 - ***Traçabilité*** : exige de suivre les actions exécutées par une entité durant son accès à un actif et de journaliser des informations décrivant les actions exécutées (tel que la durée d’accès, la nature des actions, les données utilisées, etc.) et que les actions exécutées peuvent être attribuées uniquement à cette entité, qui peut alors être tenue responsable de ses actions
 
+![[Pasted image 20240525121505.png]]
+![[Pasted image 20240525121544.png]]
+![[Pasted image 20240525121623.png]]
 ### Classification des attaques
 
 
-
 ![[attaques.excalidraw]]
-
 #### Attaques passives:
 - **Lecture du contenu des messages**
 	- message (claire) non crypte 
@@ -55,3 +56,6 @@
 ![[Pasted image 20230615103935.png]]
 
 
+![[Pasted image 20240525122919.png]]
+![[Pasted image 20240525122952.png]]
+![[Pasted image 20240525123050.png]]

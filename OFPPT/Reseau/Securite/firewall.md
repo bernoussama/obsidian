@@ -1,0 +1,3 @@
+Firewall modes:
+- Transparent
+- Router
