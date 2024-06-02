@@ -1,6 +1,3 @@
----
-title: week 1
----
 # To-do
 
 - 
