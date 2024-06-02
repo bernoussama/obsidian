@@ -1,10 +1,23 @@
 ---
 title: week 1
 ---
-# to-do
+# To-do
 
-|                   |             |     |     |
-| ----------------- | ----------- | --- | --- |
-| ![[#to-do]]       | ![[#Doing]] |     |     |
-| ![[#Considering]] | ![[#Maybe]] |     |     |
-|                   |             |     |     |
+- 
+
+# Doing
+- 
+
+# Considering
+- 
+
+# Maybe
+- 
+
+# matrix
+
+|                   |             |
+| ----------------- | ----------- |
+| ![[#To-do]]       | ![[#Doing]] |
+| ![[#Considering]] | ![[#Maybe]] |
+
