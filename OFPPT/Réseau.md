@@ -55,3 +55,8 @@ S1#write
 > **Mode Trunk <=> Mode agregee**
 
 `show vtp status`
+
+nom domaine:
+`router(config)#ip domain-name idosr.ma`
+utilisateur et pass:
+`router(config)#username admin password admin123`
