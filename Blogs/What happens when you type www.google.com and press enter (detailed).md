@@ -3,4 +3,4 @@ First things first computers don't understand domain names, domain names are mad
 
 ## ==DNS request==
 
-the browser sends a dns request to a dns server
+the browser sends a dns request to a dns server, 
