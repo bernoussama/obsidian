@@ -28,14 +28,17 @@ crypto isakmp policy 10
  group 2
  lifetime 86400
  exit
+ 
 crypto isakmp key P@assw0rd address 49.49.49.2 255.255.255.0        
 crypto ipsec transform-set IPSECSET esp-des esp-md5-hmac 
 exit
+
 crypto map IPSECMAP 10 ipsec-isakmp 
  set peer 49.49.49.2
  set transform-set IPSECSET 
  match address 101
 exit
+
 access-list 101 permit ip 192.168.100.0 0.0.0.255 192.168.1.0 0.0.0.255
 interface FastEthernet0/1
  crypto map IPSECMAP
