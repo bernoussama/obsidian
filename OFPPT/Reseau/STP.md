@@ -27,6 +27,10 @@
 ![[Pasted image 20240604191654.png]]
 ## Root bridge
 - plus petit BID
+## Ports STP
+- RP (Root Port)
+- DP (Designated Port)
+- Port blocke
 # STA(Spanning Tree Algorithm)
 1. Choisir le pont racine
 2. Choisir les ports racine.
