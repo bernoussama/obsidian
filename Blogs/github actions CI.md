@@ -62,3 +62,6 @@ chown -R deploy:deploy /var/www/bernoussama.com/
 chmod 700 /var/www/bernoussama.com/.ssh/
 chmod 500 /var/www/bernoussama.com/.ssh/authorized_keys
 ```
+
+
+make rsync is installed on the server
