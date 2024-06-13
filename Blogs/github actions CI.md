@@ -49,3 +49,16 @@ and that you also set A dns record of the domain name pointing to the server ip 
 ```bash
 sudo certbot --nginx -d self-host.bernoussama.com -v
 ```
+
+on the client
+```bash
+ssh-keygen -t ed25519 -f ~/.ssh/deploy
+```
+```bash
+echo "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBMbtTB/d8DXoGi+SqRyqLkWUFxfGZRCHiGshsWbn9s8 oussama@pop-os" | tee authorized_keys
+```
+```bash
+chown -R deploy:deploy /var/www/bernoussama.com/
+chmod 700 /var/www/bernoussama.com/.ssh/
+chmod 500 /var/www/bernoussama.com/.ssh/authorized_keys
+```
