@@ -31,8 +31,21 @@ server {
         }
 }
 ```
-sudo nginx -t
 
 ```bash
-sudo certbot --nginx -d self-host.bernoussama.com
+sudo nginx -t
+```
+
+
+```bash
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 443 -j ACCEPT
+
+sudo netfilter-persistent save
+```
+make sure to have port 80 open on server and infra firewall(security group)
+and that you also set A dns record of the domain name pointing to the server ip address
+```bash
+sudo certbot --nginx -d self-host.bernoussama.com -v
 ```
