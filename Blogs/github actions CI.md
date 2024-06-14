@@ -64,4 +64,4 @@ chmod 500 /var/www/bernoussama.com/.ssh/authorized_keys
 ```
 
 
-make rsync is installed on the server
+make sure rsync is installed on the server
