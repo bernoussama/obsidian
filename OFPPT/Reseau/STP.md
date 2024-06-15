@@ -1,10 +1,10 @@
 # Def
-- Protocole reseau permettant la redondance eleminant les boucles dans un LAN de switchs
+- Protocole réseau permettant la redondance eliminant les boucles dans un LAN de switches
 ## Protocoles STP
 - **STP**: protocole de base
 - **PVST**: PerVlanSTP
 - **PVST**+: PVST avec dot1q
-- **RSTP**: IEEE 802.1w STP amelioree
+- **RSTP**: IEEE 802.1w STP améliorée
 - MSTP: MultipleSTP RSTP par groupe de vlan
 # BID
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344.5615234375 150.32424926757812" width="344.5615234375" height="150.32424926757812">
@@ -41,14 +41,15 @@
 2. Choisir les ports racine.
 3. Choisir les ports désignés.
 4. Choisir des ports alternatifs (bloqués).
-## Couts Interfaces
+## Coûts Interfaces
 
-| Ethernet         | 100 |
-| ---------------- | --- |
-| Fast Ethh        | 19  |
-| Gigabit          | 4   |
-| Etherchannel Eth | 3   |
-| 10Gig            | 2   |
+| Interface        | Coût |
+| ---------------- | ---- |
+| Ethernet         | 100  |
+| Fast Eth         | 19   |
+| Gigabit          | 4    |
+| Etherchannel Eth | 3    |
+| 10Gig            | 2    |
 ## Etats de ports STP
 1. Initialisation
 2. Blocking (20s)
