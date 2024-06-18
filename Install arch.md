@@ -68,7 +68,7 @@ dd if=/dev/urandom of=/dev/nvme0n1 status=progress bs=4096
 ```bash
 cfdisk /dev/<disk-name> # ex. cfdisk /dev/nvme0n1
 ```
-
+![[Pasted image 20240618141742.png]]
 - Using `gdisk` (advanced) 
 > :warning: **If you are using MBR**: use `fdisk` instead !!
 ```bash
