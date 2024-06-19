@@ -1,4 +1,4 @@
-Better readabilty change font
+For Better readabilty change font
 ```
 setfont ter-132n
 ```
