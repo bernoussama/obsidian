@@ -1,5 +1,5 @@
 
-- Active directory est un serrvice d'annuaire centralise et approuve par tous les membres du domaine.
+- Active directory est un service d'annuaire centralise et approuve par tous les membres du domaine.
 ![[2023-12-08_12-54-50.png]]
 ![[Active directory 2023-12-10 20.27.32.excalidraw]]
 ![[2023-12-08_17-09-42.png]]
