@@ -9,7 +9,6 @@
 
 - **la configuration du service DNS**
 	`vi /etc/named.conf`
-
 ```dns
 listen-on port 53 { 127.0.0.1;192.168.10.20 };
 
