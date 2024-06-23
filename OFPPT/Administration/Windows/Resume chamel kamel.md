@@ -2,13 +2,13 @@
 
 Voici les associations entre les termes et les définitions de l'image que vous m'avez envoyée :
 
-| Terme | Définition |
-|---|---|
-| **Domaine** | Le contexte dans lequel on crée des comptes d'utilisateurs, des comptes de groupes et des comptes d'ordinateurs. Il s'agit d'une limite de réplication. | **A** |
-| **Catalogue global** | Héberge un jeu d'attributs partiel pour d'autres domaines dans la forêt. Prend en charge les requêtes pour les objets dans l'ensemble de la forêt. | **E** |
-| **Contrôleurs de domaine** | Des serveurs qui hébergent la base de données Active Directory (NTDS.DIT) et SYSVOL. | **D** |
-| **Schéma AD** | Agit en tant que modèle pour Active Directory DS en définissant les attributs et les classes d'objets. | **C** |
-| **Unité d'organisation** | Conteneurs permettent de regrouper des objets dans un domaine. | **B** |
+| Terme                      | Définition                                                                                                                                              |       |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| **Domaine**                | Le contexte dans lequel on crée des comptes d'utilisateurs, des comptes de groupes et des comptes d'ordinateurs. Il s'agit d'une limite de réplication. | **A** |
+| **Catalogue global**       | Héberge un jeu d'attributs partiel pour d'autres domaines dans la forêt. Prend en charge les requêtes pour les objets dans l'ensemble de la forêt.      | **E** |
+| **Contrôleurs de domaine** | Des serveurs qui hébergent la base de données Active Directory (NTDS.DIT) et SYSVOL.                                                                    | **D** |
+| **Schéma AD**              | Agit en tant que modèle pour Active Directory DS en définissant les attributs et les classes d'objets.                                                  | **C** |
+| **Unité d'organisation**   | Conteneurs permettent de regrouper des objets dans un domaine.                                                                                          | **B** |
 
 Voici une explication plus détaillée de chaque association :
 
