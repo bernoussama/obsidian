@@ -177,4 +177,11 @@ end
 
 ```
 # Ansible playbook
-- open 
+- now we will create the playbook in the path mentioned in Vagrantfile `provisioning/playbook.yml`
+```yaml
+- hosts: all
+  become: yes
+  roles:
+  - kali-init
+
+```
