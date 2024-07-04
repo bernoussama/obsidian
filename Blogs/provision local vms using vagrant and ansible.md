@@ -177,11 +177,149 @@ end
 
 ```
 # Ansible playbook
-- now we will create the playbook in the path mentioned in Vagrantfile `provisioning/playbook.yml`
+- now we will create the playbook in the path mentioned in `Vagrantfile` `provisioning/playbook.yml`
 ```yaml
 - hosts: all
   become: yes
   roles:
   - kali-init
 
+```
+roles are a file structure that lets load automatically tasks...
+roles also help make the playbook more structured as it grows big
+now we have one role and its structure look like this:
+```
+roles
+└── kali-init
+	└── tasks
+		├── main.yml
+		├── packages.yml
+		└── tor.yml
+```
+
+`tasks/main.yml`
+```
+- import_tasks: packages.yml
+  become: yes
+- import_tasks: tor.yml
+  become: yes
+```
+
+`tasks/packages.yml`
+```yaml
+- name: Download packages using apt
+  apt:
+    update_cache: yes
+    name:
+      - neovim
+      - curl
+      - wget
+      - nmap
+      - wireshark
+      - tor
+      - proxychains
+      - torbrowser-launcher
+    state: present
+  become: yes
+
+```
+
+`tasks/tor.yml`
+```yaml
+- name: Ensure Proxychains is installed
+  apt:
+    name: proxychains
+    state: present
+
+- name: Ensure tor is installed
+  apt:
+    name: tor
+    state: present
+
+- name: Enable tor service
+  ansible.builtin.systemd:
+    name: tor
+    state: started
+    enabled: true
+
+- name: Backup current proxychains.conf
+  copy:
+    src: /etc/proxychains.conf
+    dest: /etc/proxychains.conf.bak
+    remote_src: yes
+
+- name: Uncomment dynamic_chain
+  replace:
+    path: /etc/proxychains.conf
+    regexp: '^#dynamic_chain'
+    replace: 'dynamic_chain'
+
+- name: Uncomment proxy_dns
+  replace:
+    path: /etc/proxychains.conf
+    regexp: '^#proxy_dns'
+    replace: 'proxy_dns'
+
+- name: Comment random_chain
+  replace:
+    path: /etc/proxychains.conf
+    regexp: '^random_chain'
+    replace: '#random_chain'
+
+
+- name: Comment strict_chain
+  replace:
+    path: /etc/proxychains.conf
+    regexp: '^strict_chain'
+    replace: '#strict_chain'
+
+- name: Modify proxychains configuration
+  lineinfile:
+    path: /etc/proxychains.conf
+    line: 'socks5 127.0.0.1 9050'
+    state: present
+
+- name: Modify proxychains configuration
+  lineinfile:
+    path: /etc/proxychains.conf
+    line: 'socks4  127.0.0.1 9050'
+    state: present
+
+```
+
+the project directory structure should look like this:
+```
+.
+├── provisioning
+│   ├── playbook.yml
+│   └── roles
+│       └── kali-init
+│           └── tasks
+│               ├── main.yml
+│               ├── packages.yml
+│               └── tor.yml
+└── Vagrantfile
+
+```
+# Using vagrant
+to provision a new vm, make sure you are in the directory where the `Vagrantfile` is and run:
+```bash
+vagrant up
+```
+![[Pasted image 20240704020743.png]]
+the machine will get installed and spawned up, the gui will show up. After booting up ansible will connect to the vm and run playbook.
+![[Pasted image 20240704021450.png]]![[Pasted image 20240704021658.png]]
+this the output of ansible playbook finishing succesfully
+![[Pasted image 20240704021941.png]]
+the kali vm is now installed and running
+**N.B**
+	default user is `vagrant` and default password is also `vagrant`
+
+to pause the vm run:
+```
+vagrant halt
+```
+to destroy run:
+```
+vagrant destroy
 ```
