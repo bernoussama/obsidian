@@ -1,0 +1,8 @@
+{
+	"nodes":[
+		{"id":"321270f3aa5ccf91","type":"file","file":"Certs/Java SE 17/Drawing 2024-11-25 20.24.31.excalidraw.md","x":-620,"y":-420,"width":560,"height":500},
+		{"id":"4fde66b08e80ed0d","type":"text","text":"> `static` means the class can be called without creating an instance of that class","x":-900,"y":-243,"width":250,"height":146},
+		{"id":"f50e8991972aebc9","x":-720,"y":180,"width":860,"height":140,"type":"file","file":"Certs/Java SE 17/compilation.md"}
+	],
+	"edges":[]
+}
