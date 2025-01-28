@@ -60,3 +60,53 @@ $$
 ### $$
 Q_3 = b_{i-1} + (b_i - b_{i-1}) \times \frac{0.75N - N_{l-1}}{N_l - N_{l-1}}
 $$
+### Variance
+#### $$
+V(X) = \frac{\sum^{n}_{i=1} (x_{i}-\bar{x})^2}{n}
+$$
+simplifie
+#### $$
+V(X) = \frac{\sum^{n}_{i=1} x_{i}^2}{n}-\bar{x}^2
+$$
+### Ecart type
+$$
+\sigma = \sqrt{ V(X) } 
+$$
+
+### Intervalle inter-quartile
+$$
+I = Q_{3} - Q_{1}
+$$
+### Intervalle inter-decile
+il existe 4 intervalles:
+$D_{9}-D_{1};D_{8}-D_{2};D_{7}-D_{3};D_{6}-D_{4}$
+
+
+# Statistique descriptive bivariee
+### frequence partielle
+#### $$
+f_{ij} = \frac{n_{ij}}{n}
+$$
+## Distribution marginales
+est l'etude de distribution de X sans tenir compte de Y ou l'inverse.
+### Effectif marginal
+#### $$
+n_{i.} = \sum^{p}_{i=1} n_{ij}
+$$
+#### $$
+n_{.j} = \sum^{q}_{j=1} n_{ij}
+$$
+### Effectif marginal
+#### $$
+f_{i.} = \sum^{p}_{i=1} f_{ij}
+$$
+#### $$
+f_{.j} = \sum^{q}_{j=1} f_{ij}
+$$
+![[Pasted image 20250118143733.png]]
+![[Pasted image 20250118144100.png]]
+### Moyennes marginales
+#### $$
+
+\bar{x} = \frac{1}{n}  \sum^{p}_{i=1} n_{i.}x_{i} = \frac{1}{n}  \sum^{p}_{i=1} \sum^{q}_{j=1}n_{ij}x_{i}
+$$
