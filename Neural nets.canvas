@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"5c4d985244c127e0","x":-540,"y":-220,"width":250,"height":60,"type":"text","text":"Neuron is a thing holding a number"}
+	],
+	"edges":[]
+}
